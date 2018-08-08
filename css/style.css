@@ -1,4 +1,30 @@
-.phone img{
-    width: 35px;
-    height: 29px;
+:root{
+    --body-bg:#E1DFDF;
+    --header-bg: rgba(27,82,128,0.9);
+    --bar_color1:#1B5280;
+    --bar_color2:#F4C432;
+    --color_text_blue:#1B5280;
+    --color_text_yellow: #F4C432;
+    --color_text_menu: #ABC9D9;
+    --border_text_yellow: #FFFFFF;
+    --border_size_ty: 0.5;
+    --text_menu_title:#EAD410;
+    --font_main: roboto;
+    --font_second: raleway;
+    --font_size_bigger: 20px;
+    --font_size_big: 18px;
+    --font_size_medium: 16px;
+    --font_size_small: 14px;
+    --font_size_xsmall: 12px;
+    --font_size_smaller: 8px;
+    --header_w: 320px;
+    --header_h: 203px;
+    --bar_title_height:51px;
+    --bar_title_blue_w: 49px;
+    --bar_title_yellow_w: 285px;
+    --form_bg_color: #EBEBEB;
+    --footer_h: 180px;
+    --footer_w: 320px;
+    --footer_bg_color: #171717;
+    --footer_textcolor: #918686;
 }
