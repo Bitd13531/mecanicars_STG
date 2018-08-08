@@ -11,13 +11,13 @@
     <meta name="author" content="Websales chile">
     <meta name="robots" content="index, follow">
     <meta name="revisit-after" content="3 month">
-    <title>Mecanicars</title>
+    <title>Inicio | Mecanicars</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto:700" rel="stylesheet">
 </head>
 
-<body itemscope itemtype = "https://schema.org/WebPage">
+<body>
     <header>
 
         <div class="menu_main_container">
@@ -43,14 +43,14 @@
                 </ul>
             </div>
         </div>
-        <div class="main_menu_content">
-            <h1 class="main_menu_title">Servicio a Domicilio</h1>
-            <p class="main_menu_text">
-                <span itemprop = "keywords">Diagnóstico y detección de fallas.</span>
-                <span itemprop = "keywords">Inspección ocular de inicio, Reparaciones y mantenciones.</span>
-                <span itemprop = "keywords">Reemplazo y ajuste de piezas.</span>
-                <span itemprop = "keywords">Car Wash.</span>
-                <span itemprop = "keywords">Asesorias de chequeo pre-compra para autos usados.</span>
+        <div class="main_menu_content" itemscope itemtype="https://schema.org/Organization">
+            <h1 class="main_menu_title"><span itemprop="legalName">Mecanicars</span>: Servicio a Domicilio</h1>
+            <p class="main_menu_text" itemscope itemtype="https://schema.org/WebPage">
+                <span itemprop="keywords">Diagnóstico y detección de fallas.</span>
+                <span itemprop="keywords">Inspección ocular de inicio, Reparaciones y mantenciones.</span>
+                <span itemprop="keywords">Reemplazo y ajuste de piezas.</span>
+                <span itemprop="keywords">Car Wash.</span>
+                <span itemprop="keywords">Asesorias de chequeo pre-compra para autos usados.</span>
             </p>
         </div>
         <div class="contact_form">
@@ -78,17 +78,17 @@
 
         <div class="bar_section">
             <article>
-                <h2 itemprop = "about">Contacte a los verdaderos expertos en Mecánica</h2>
+                <h2 itemprop="about">Contacte a los verdaderos expertos en Mecánica</h2>
                 <p>y deje las paradas en panne para otros</p>
             </article>
-            <div class="phone">
+            <div class="phone" itemscope itemtype="https://schema.org/Organization">
                 <img src="./svg/old-typical-phone.svg" alt="">
-                <h3 itemprop = "telephone">+56949280051</h3>
+                <h3 itemprop="telephone">+56949280051</h3>
             </div>
         </div>
     </header>
-    <main>
-        <div class="main_container" itemprop = "mainContentOfPage">
+    <main itemscope itemtype="https://schema.org/WebPage">
+        <div class="main_container" itemprop="mainContentOfPage">
             <div class="card">
                 <article>
                     <img src="./img/contactus.png" alt="">
@@ -178,12 +178,14 @@
                     <a href="#">Visita nuestras redes sociales</a>
                 </li>
                 <li>
-                    <a href="#" itemscope itemtype ="https://schema.org/Organization">Dirección:
-                        <span itemprop="address">Los Laburnos 2512, Puente Alto, Santiago R.M.</span>
+                    <a href="#" itemscope itemtype="https://schema.org/Organization">Dirección:
+                        <span itemprop="address">Los Laburnos 2512, Puente Alto,
+                            <span itemprop="areaServed">Santiago de Chile, R.M.</span>
+                        </span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">Correo:
+                    <a href="#" itemscope itemtype="https://schema.org/Organization">Correo:
                         <span itemprop="email">atencion@mecanicars.cl</span>
                     </a>
                 </li>
@@ -191,7 +193,10 @@
 
         </div>
         <div class="copyright_container">
-            <p>Copyright<span itemprop="copyrightYear">2018</span>  - <span itemprop="copyrightHolder"> Mecanicars.cl</span></p>
+            <p>Copyright
+                <span itemprop="copyrightYear">2018</span> -
+                <span itemprop="copyrightHolder"> Mecanicars.cl</span>
+            </p>
             <p>Sitio Web Diseñado por WebSales</p>
         </div>
         <div class="footer_icon_container">
