@@ -1,30 +1,200 @@
-:root{
-    --body-bg:#E1DFDF;
-    --header-bg: rgba(27,82,128,0.9);
-    --bar_color1:#1B5280;
-    --bar_color2:#F4C432;
-    --color_text_blue:#1B5280;
-    --color_text_yellow: #F4C432;
-    --color_text_menu: #ABC9D9;
-    --border_text_yellow: #FFFFFF;
-    --border_size_ty: 0.5;
-    --text_menu_title:#EAD410;
-    --font_main: roboto;
-    --font_second: raleway;
-    --font_size_bigger: 20px;
-    --font_size_big: 18px;
-    --font_size_medium: 16px;
-    --font_size_small: 14px;
-    --font_size_xsmall: 12px;
-    --font_size_smaller: 8px;
-    --header_w: 320px;
-    --header_h: 203px;
-    --bar_title_height:51px;
-    --bar_title_blue_w: 49px;
-    --bar_title_yellow_w: 285px;
-    --form_bg_color: #EBEBEB;
-    --footer_h: 180px;
-    --footer_w: 320px;
-    --footer_bg_color: #171717;
-    --footer_textcolor: #918686;
+:root {
+  --body-bg             : #e1dfdf;
+  --header-bg           : rgba(27, 82, 128, 0.9);
+  --bar_color1          : #1b5280;
+  --bar_color2          : #f4c432;
+  --color_text_blue     : #1b5280;
+  --color_text_yellow   : #f4c432;
+  --color_text_menu     : #abc9d9;
+  --border_text_yellow  : #ffffff;
+  --dark_textcolor      : #282B2D;
+  --text_menu_title     : #ead410;
+  --form_bg_color       : #ebebeb;
+  --footer_bg_color     : #171717;
+  --footer_textcolor    : #918686;
+  --font_main           : roboto;
+  --font_second         : raleway;
+  --font_size_bigger    : 20px;
+  --font_size_big       : 18px;
+  --font_size_medium    : 16px;
+  --font_size_small     : 14px;
+  --font_size_xsmall    : 12px;
+  --font_size_smaller   : 8px;
+  --header_w            : 320px;
+  --header_h            : 203px;
+  --bar_title_height    : 51px;
+  --bar_title_blue_w    : 49px;
+  --bar_title_yellow_w  : 285px;
+  --footer_h            : 180px;
+  --footer_w            : 320px;
+  --border_size_ty      : 0.5;
+}
+*,
+*::before,
+*::after {
+  box-sizing            : border-box;
+}
+
+@media screen and (min-width: 320px) {
+
+    body{
+        background-color: var(--body-bg);
+        margin: 0;
+        font-family: var(--font_second), sans-serif;
+        position: relative;
+    }
+    /* -------------------------------------header ----------------------------------------*/
+
+    header {
+        position: relative;
+        height: 203px;
+        width: 320px;
+        background-image: linear-gradient(var(--header-bg), var(--bar_color1)), url(../img/menushape-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-bottom-left-radius: 50% 15%;
+        border-bottom-right-radius: 50% 15%;
+      }
+      .menu_logo img{
+          width: 90px;
+          height: 35px;
+      }
+      .main_menu_title{
+          font-size: var(--font_size_medium);
+          font-family: var(--font_main), sans-serif;
+          font-weight: 700;
+          color: var(--text_menu_title);
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+      }
+      .main_menu_text, .menu_container{
+          font-size: var(--font_size_xsmall);
+          color: var(--color_text_menu);
+      }
+      .menu_container{
+          position: absolute;
+      }
+      .main_content img{
+          width: 98px;
+          height: 65px;
+      }
+      .main_content h2 span{
+          font-family: var(--font_main);
+          font-size: var(--font_size_bigger);
+          color: var(--text_menu_title);
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+      }
+      .bar_section .phone img{
+          width: 16px;
+          height: 16px;
+      }
+      .bar_section .phone img:nth-child(2){
+        width: 23px;
+        height: 25px;
+      }
+      .bar_section h2{
+          color: var(--dark_textcolor);
+          font-family: var(--font_main);
+          font-size: var(--font_size_small);
+          font-weight: 700;
+      }
+      .bar_section p{
+        color: var(--dark_textcolor);
+        font-family: var(--font_second);
+        font-size: var(--font_size_xsmall);
+    }
+    .bar_section{
+        display: flex;
+    }
+
+
+
+      /* --------------------main --------------------------------------------------*/
+
+
+      .main_container .card img{
+        width: 282px;
+        height: 173px;
+      }
+
+      .card h3, .card h3 p{
+          color: var(--dark_textcolor);
+      }
+      .card h3{
+        font-family: var(--font_main);
+        font-size: var(--font_size_medium);
+        font-weight: 700;
+
+      }
+      .card h3 p{
+        font-family: var(--font_second);
+        font-size: var(--font_size_xsmall);
+      }
+      .img_container img{
+          display: none;
+
+      }
+      .phone h3{
+          font-size: var(--font_size_xsmall);
+          font-family: var(--font_main);
+          font-weight: 700;
+          color: var(--color_text_blue);
+          border-width: 3px;
+          border-style: solid;
+          border-color: var(--color_text_blue);
+          border-radius: 8px;
+          padding: 4px 5px 4px 25px;
+      }
+
+      /*----------------------------- formulario------------------------------- */
+      .contact_form{
+          color: var(--dark_textcolor);
+          font-family: var(--font_second);
+          font-size: var(--font_size_medium);
+      }
+    /* ---------------------------footer---------------------------------------- */
+
+    footer{
+        background-color: var(--footer_bg_color);
+        height: var(--footer_h);
+        width: var(--footer_w);
+        color: var(--footer_textcolor);
+        display:grid;
+        
+    }
+    ul li, ul li a, ul li span{
+        text-decoration: none;
+        color: inherit;
+        font-size: var(--font_size_xsmall);
+        list-style: none;
+    }
+    
+    .copyright_container, 
+    .copyright_container span, 
+    ul li:nth-child(6) a,
+    ul li:nth-child(6) a span,
+    ul li:nth-child(7) a,
+    ul li:nth-child(7) a span,
+    ul li:nth-child(7) span{
+        font-size: var(--font_size_smaller);
+    }
+    .footer_icon_container ul li a img{
+        height: 17px;
+        width: 17px;
+    }
+    .footer_icon_container ul li a img:nth-child(1){
+        width: 13px;
+    }
+    .footer_icon_container ul li a img:nth-child(2){
+        width: 16px;
+    }
+    .footer_icon_container ul{
+        display: flex;   
+        justify-content: flex-end;
+    }
+    .footer_icon_container ul li{
+        margin-right: 15px;
+    }
+    .footer_icon_container ul li:nth-child(5){
+        margin-right: 20px;
+    }
 }
