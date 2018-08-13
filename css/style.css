@@ -38,13 +38,21 @@
 body {
   background-color: var(--body-bg);
   margin: 0;
-  font-family: var(--font_second), sans-serif;
   position: relative;
+}
+h1,
+h2,
+h3,
+ul li {
+  font-family: var(--font_main), sans-serif;
+  font-weight: 700;
+}
+p {
+  font-family: var(--font_second), sans-serif;
 }
 /* -------------------------------------header ----------------------------------------*/
 
 header {
-  /* position: relative; */
   height: var(--header_h);
   width: var(--body_w);
   background-image: linear-gradient(var(--header-bg), var(--bar_color1)),
@@ -60,7 +68,6 @@ header {
 }
 .main_menu_title {
   font-size: var(--font_size_medium);
-  font-family: var(--font_main), sans-serif;
   font-weight: 700;
   color: var(--text_menu_title);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
@@ -78,7 +85,7 @@ header {
   height: 65px;
 }
 .main_content h2 span {
-  font-family: var(--font_main);
+  font-family: var(--font_main), sans-serif;
   font-size: var(--font_size_bigger);
   color: var(--text_menu_title);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
@@ -93,13 +100,11 @@ header {
 }
 .bar_section h2 {
   color: var(--dark_textcolor);
-  font-family: var(--font_main);
   font-size: var(--font_size_small);
   font-weight: 700;
 }
 .bar_section p {
   color: var(--dark_textcolor);
-  font-family: var(--font_second);
   font-size: var(--font_size_xsmall);
 }
 /* .bar_section{
@@ -115,9 +120,11 @@ img {
 }
 /* --------------------main --------------------------------------------------*/
 
+
 .main_container .card img {
   width: 282px;
   height: 173px;
+  
 }
 
 .card h3,
@@ -125,21 +132,15 @@ img {
   color: var(--dark_textcolor);
 }
 .card h3 {
-  font-family: var(--font_main);
   font-size: var(--font_size_medium);
   font-weight: 700;
 }
 .card h3 p {
-  font-family: var(--font_second);
   font-size: var(--font_size_xsmall);
 }
-.img_container img {
-  display: grid;
-}
+
 .phone h3 {
   font-size: var(--font_size_xsmall);
-  font-family: var(--font_main);
-  font-weight: 700;
   color: var(--color_text_blue);
   border-width: 3px;
   border-style: solid;
@@ -151,8 +152,9 @@ img {
 /*----------------------------- formulario------------------------------- */
 .contact_form {
   color: var(--dark_textcolor);
-  font-family: var(--font_second);
+  font-family: var(--font_second),sans-serif;
   font-size: var(--font_size_medium);
+  position: relative;
 }
 /* ---------------------------footer---------------------------------------- */
 
