@@ -15,12 +15,14 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
+        <!-- --------------------menu main container-------------------- -->
 
-        <div class="menu_main_container grid">
+        <div class="menu_main_container">
 
             <div class="menu_logo">
                 <img src="./img/mecanicars_logo.png" alt="Logo Mecanicars">
@@ -42,7 +44,13 @@
                     </li>
                 </ul>
             </div>
+            <span>
+                <i class="fas fa-bars fa-3x"></i>
+            </span>
         </div>
+
+        <!-- ----------------main menu content--------------------- -->
+
         <div class="main_menu_content">
             <h1 class="main_menu_title"> Servicio a Domicilio</h1>
             <p class="main_menu_text" itemscope itemtype="https://schema.org/WebPage">
@@ -53,87 +61,97 @@
                 <span itemprop="keywords">Asesorias de chequeo pre-compra para autos usados.</span>
             </p>
         </div>
-        <div class="contact_form">
-            <form method="POST" action="" class="contactus" name="contact">
-                <h3>Contactenos</h3>
-                <label class="form_label" for="name">Nombre</label>
-                <input class="form_text" name="name" type="text" placeholder="Ingrese aqui su Nombre" required>
-                <label class="form_label" for="lastname">Apellido</label>
-                <input class="form_text" name="lastname" type="text" placeholder="Ingrese aqui su Apellido" required>
-                <label class="form_label" for="email">Correo Electronico</label>
-                <input class="form_text" name="email" type="email" placeholder="Ingrese aqui su correo" required>
-                <label class="form_label" for="telefono">Telefono</label>
-                <input class="form_text" name="telefono" type="text" placeholder="Ingrese aqui su numero de telefono" required>
-                <label class="form_label" for="message">Mensaje</label>
-                <textarea class="form_txtarea" name="message" id="form_contacto" cols="21" rows="2" placeholder="Ingrese aqui su mensaje"></textarea>
-                <input class="form_button" type="submit">
-            </form>
-        </div>
-        <div class="main_content">
-            <img src="./img/car-capot.png" alt="Auto rojo en revision">
-            <h2>
-                <span>Visitamos tu domicilio en el horario de tu perferencia</span>
-            </h2>
-        </div>
 
-        <div class="bar_section">
-            <article>
-                <h2 itemprop="about">Contacte a los verdaderos expertos en Mecánica</h2>
-                <p>y deje las paradas en panne para otros</p>
-            </article>
-            <div class="phone" itemscope itemtype="https://schema.org/Organization">
-                <img src="./svg/old-typical-phone.svg" alt="">
-                <h3 itemprop="telephone">+56949280051</h3>
-                <img src="./svg/005-whatsapp-logo.svg" alt="">
+        <!-- --------------------------formulario------------------------ -->
+        <section>
+            <div class="contact_form">
+                <form method="POST" action="" class="contactus" name="contact">
+                    <h3>Contactenos</h3>
+                    <label class="form_label" for="name">Nombre</label>
+                    <input class="form_text" name="name" type="text" placeholder="Ingrese aqui su Nombre" required>
+                    <label class="form_label" for="lastname">Apellido</label>
+                    <input class="form_text" name="lastname" type="text" placeholder="Ingrese aqui su Apellido" required>
+                    <label class="form_label" for="email">Correo Electronico</label>
+                    <input class="form_text" name="email" type="email" placeholder="Ingrese aqui su correo" required>
+                    <label class="form_label" for="telefono">Telefono</label>
+                    <input class="form_text" name="telefono" type="text" placeholder="Ingrese aqui su numero de telefono" required>
+                    <label class="form_label" for="message">Mensaje</label>
+                    <textarea class="form_txtarea" name="message" id="form_contacto" cols="21" rows="2" placeholder="Ingrese aqui su mensaje"></textarea>
+                    <input class="form_button" type="submit">
+                </form>
             </div>
-        </div>
+            <!-- --------------------inicio del contenido----------------------------------- -->
+
+            <div class="main_content">
+                <img src="./img/car-capot.png" alt="Auto rojo en revision">
+                <h2 class="main_title">Visitamos tu domicilio en el horario de tu perferencia!</h2>
+            </div>
+
+            <div class="bar_section">
+                <article>
+                    <h2 itemprop="about">Contacte a los verdaderos expertos en Mecánica</h2>
+                    <p>y deje las paradas en panne para otros</p>
+                </article>
+                <div class="phone" itemscope itemtype="https://schema.org/Organization">
+                    <img class="phone_ico" src="" alt="">
+                    <h3 itemprop="telephone"><span class="fas fa-phone fa-3x"></span><a href="#">+56949280051</a></h3>
+                    <img src="./svg/005-whatsapp-logo.svg" alt="">
+                </div>
+            </div>
+        </section>
     </header>
+    <!-- ------------------------------------------------------------------ -->
+
     <div class="main" itemscope itemtype="https://schema.org/WebPage">
-        <div class="main_container grid" itemprop="mainContentOfPage">
-            <div class="card">
-                <article>
-                    <img src="./img/contactus.png" alt="">
-                    <h3>Paso 01: Contáctenos</h3>
-                    <p>Contactenos a traves del medio de su preferencia: Whatsapp, Via telefonica, a través del formulario de
-                        contacto, via correo electronico o de forma presencial en nuestras oficinas y solicite una evaluacion
-                        inicial.
-                    </p>
-                </article>
+        <section class="show_container_a">
+            <div class="main_container" itemprop="mainContentOfPage">
+                <div class="card">
+                    <article>
+                        <img src="./img/contactus.png" alt="">
+                        <h3>Paso 01: Contáctenos</h3>
+                        <p>Contactenos a traves del medio de su preferencia: Whatsapp, Via telefonica, a través del formulario
+                            de contacto, via correo electronico o de forma presencial en nuestras oficinas y solicite una
+                            evaluacion inicial.
+                        </p>
+                    </article>
+                </div>
+                <div class="card">
+                    <article>
+                        <img src="./img/1552.png" alt="">
+                        <h3>Paso 02: Agende la visita de nuestros Expertos</h3>
+                        <p>Nuestro personal agendará una visita de los Expertos en la ubicación de su preferencia: Casa u oficina,
+                            o bien en nuestras oficinas para diagnosticar lo que su vehiculo necesita.</p>
+                    </article>
+                </div>
+                <div class="card">
+                    <article>
+                        <img src="./img/1188.png" alt="">
+                        <h3>Paso 03: Conoce el diagnostico de tu vehiculo</h3>
+                        <p>Nuestros expertos realizaran una inspeccion ocular de inicio y una Diagnostico especializado con
+                            nuestros escaneres profesionales para determinar las fallas que posee su vehiculo y recomendar
+                            la solucion</p>
+                    </article>
+                </div>
+                <div class="card">
+                    <article>
+                        <img src="./img/1553.png" alt="">
+                        <h3>Paso 04: Concreta nuestros servicios</h3>
+                        <p>Luego de conocer el diagnostico, nuestros expertos le indicaran la solucion, con un presupuesto detallado
+                            de costos incluyendo repuestos en caso de necesitarlo, a fin de que usted pueda evaluar y aceptar
+                            nuestros servicios.</p>
+                    </article>
+                </div>
+                <div class="card">
+                    <article>
+                        <img src="./img/1573.png" alt="">
+                        <h3>Paso 05: Disfruta de los resultados</h3>
+                        <p>Todos nuestros trabajos son garantizados, por lo que estamos seguros de los resultados satisfactorios,
+                            brindandole seguridad a nuestros clientes.</p>
+                    </article>
+                </div>
             </div>
-            <div class="card">
-                <article>
-                    <img src="./img/1552.png" alt="">
-                    <h3>Paso 02: Agende la visita de nuestros Expertos</h3>
-                    <p>Nuestro personal agendará una visita de los Expertos en la ubicación de su preferencia: Casa u oficina,
-                        o bien en nuestras oficinas para diagnosticar lo que su vehiculo necesita.</p>
-                </article>
-            </div>
-            <div class="card">
-                <article>
-                    <img src="./img/1188.png" alt="">
-                    <h3>Paso 03: Conoce el diagnostico de tu vehiculo</h3>
-                    <p>Nuestros expertos realizaran una inspeccion ocular de inicio y una Diagnostico especializado con nuestros
-                        escaneres profesionales para determinar las fallas que posee su vehiculo y recomendar la solucion</p>
-                </article>
-            </div>
-            <div class="card">
-                <article>
-                    <img src="./img/1553.png" alt="">
-                    <h3>Paso 04: Concreta nuestros servicios</h3>
-                    <p>Luego de conocer el diagnostico, nuestros expertos le indicaran la solucion, con un presupuesto detallado
-                        de costos incluyendo repuestos en caso de necesitarlo, a fin de que usted pueda evaluar y aceptar
-                        nuestros servicios.</p>
-                </article>
-            </div>
-            <div class="card">
-                <article>
-                    <img src="./img/1573.png" alt="">
-                    <h3>Paso 05: Disfruta de los resultados</h3>
-                    <p>Todos nuestros trabajos son garantizados, por lo que estamos seguros de los resultados satisfactorios,
-                        brindandole seguridad a nuestros clientes.</p>
-                </article>
-            </div>
-        </div>
+        </section>
+        <section class="slider">
         <div class="info_container">
             <div class="img_container">
                 <ul>
@@ -153,14 +171,15 @@
                         <img src="./img/smarthphone_mechanicads.png" alt="">
                     </li>
                 </ul>
-                <img src="./svg/left-arrow.svg" alt="">
-                <img src="./svg/right-arrow.svg" alt="">
+               <i class="fas fa-angle-left fa-3x"></i>
+                <i class="fas fa-angle-right fa-3x"></i>
                 <button>Contactanos</button>
             </div>
         </div>
+    </section>
     </div>
-
-    <footer class="grid">
+<!-- -------------------------footer --------------------------- -->
+    <footer class="footer_grid">
         <div class="footer_container">
             <ul>
                 <li>
@@ -187,9 +206,12 @@
                 </li>
                 <li>
                     <a href="#" itemscope itemtype="https://schema.org/Organization">Correo:
-                        <span itemprop="email">atencion@mecanicars.cl</span></a> |
-                        <span itemprop="legalName">Mecanicars <span>, Rut:76.900.867-5</span></span>
-                    
+                        <span itemprop="email">atencion@mecanicars.cl</span>
+                    </a> |
+                    <span itemprop="legalName">Mecanicars
+                        <span>, Rut:76.900.867-5</span>
+                    </span>
+
                 </li>
             </ul>
 
@@ -205,17 +227,17 @@
             <ul>
                 <li>
                     <a href="#">
-                        <img src="./svg/map.svg" alt="">
+                        <i class="fas fa-map-marker-alt fa-3x"></i>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./svg/envelope.svg" alt="">
+                        <i class="fas fa-envelope fa-3x"></i>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./svg/instagram.svg" alt="">
+                        <i class="fas fa-camera-retro fa-3x"></i>
                     </a>
                 </li>
                 <li>
@@ -225,7 +247,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./svg/youtube.svg" alt="">
+                        <i class="fab fa-youtube fa-3x"></i>
                     </a>
                 </li>
             </ul>
