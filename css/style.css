@@ -21,7 +21,7 @@
   --font_size_xsmall: 0.75rem;
   --font_size_smaller: 0.5rem;
   --body_w: 20rem;
-  --header_h: 20rem;
+  --header_h: 15rem;
   --bar_title_height: 3.1875rem;
   --bar_title_blue_w: 3.0625rem;
   --bar_title_yellow_w: 17.8125rem;
@@ -62,13 +62,13 @@ form{
 /* -------------------------------------header ----------------------------------------*/
 header{
   height: var(--header_h);
-  width: var(--body_w);
+  width: 100vw;
   background-image: linear-gradient(var(--header-bg), var(--bar_color1)),
     url(../img/menushape-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  border-bottom-left-radius: 40% 15%;
-  border-bottom-right-radius: 40% 15%;
+  border-bottom-left-radius: 45% 25%;
+  border-bottom-right-radius: 45% 25%;
   padding: 0;
 }
 .menu_main_container{
@@ -88,7 +88,7 @@ header{
 .menu_container{
   position: absolute;
   right: 0;
-  top: 0;
+  top: 30;
   margin: 0;
 }
 .menu_container li{
@@ -96,39 +96,75 @@ header{
   padding: 10px 0;
   border-bottom: 1px solid var(--color_text_blue);
   font-family: var(--font_main);
+  z-index: 1;
+}
+.menu_container li:hover{
+  background: #356d97;
 }
 
 .menu_container a{
   text-decoration: none;
   color: var(--color_text_menu);
   align-items: center;
-  font-family: var(--font_main), sans-serif;
+  
   }
 .menu_container a span::before{
 margin-right: 5px;
+/* font-family: var(--font_main), sans-serif; */
 }
 
 .menu_container ul{
   background: #0f3553;
-  height: 40vh;
-  width: 45vw;
+  height: 80vh;
+  width: 46vw;
   padding: 0;
   margin-top: 10px;
   align-items: center;
-  transform: translateX(100%)
+  transform: translateX(100%);
+  
 }
 .fa-bars{
   color: var(--color_text_menu);
   position: absolute;
   font-size: 25px;
   right: 20px;
-  top: 20px;
+  top: 15px;
   border: 1px solid var(--color_text_menu);
   border-radius: 3px;
   padding: 5px;
 
 }
-/* --------------------main --------------------------------------------------*/
+.fa-bars:hover{
+  color:var(--bar_color2);
+  border: 1px solid var(--bar_color2);
+}
+/* --------------------main_menu_content --------------------------------------------------*/
+.main_menu_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_menu_title{
+  font-size: var(--font_size_bigger);
+  color: var(--color_text_yellow);
+  text-shadow: 1px 2px 2px rgba(0,0,0,0.75);
+  font-family: var(--font_main), sans-serif;
+  align-self: flex-start;
+  padding: 0 10px;
+}
+ .main_menu_text{
+  color: var(--color_text_menu);
+  font-size: var(--font_size_small);
+  font-family: var(--font_second), sans-serif;
+  margin: 0;
+  width: 85%;
+  align-items: center;
+}
+.main_menu_text span {}
+.main_menu_text span::after{
+  content: '\A'; white-space: pre;
+  line-height: 0.8rem;
+}
 
 
 /*----------------------------- formulario------------------------------- */
