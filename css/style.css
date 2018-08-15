@@ -21,7 +21,7 @@
   --font_size_xsmall: 0.75rem;
   --font_size_smaller: 0.5rem;
   --body_w: 20rem;
-  --header_h: 14rem;
+  --header_h: 20rem;
   --bar_title_height: 3.1875rem;
   --bar_title_blue_w: 3.0625rem;
   --bar_title_yellow_w: 17.8125rem;
@@ -67,8 +67,66 @@ header{
     url(../img/menushape-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  border-bottom-left-radius: 40% 35%;
-  border-bottom-right-radius: 40% 35%;
+  border-bottom-left-radius: 40% 15%;
+  border-bottom-right-radius: 40% 15%;
+  padding: 0;
+}
+.menu_main_container{
+  display: inline-block;
+}
+.menu_logo{
+  width: 6.5rem;
+  height: 2.8rem;
+  margin: 0px 0 0 15px;
+  padding-top: 20px;
+}
+.main_menu_context{
+
+}
+
+/* --------------menu rwd------------------- */
+.menu_container{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+}
+.menu_container li{
+  list-style: none;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color_text_blue);
+  font-family: var(--font_main);
+}
+
+.menu_container a{
+  text-decoration: none;
+  color: var(--color_text_menu);
+  align-items: center;
+  font-family: var(--font_main), sans-serif;
+  }
+.menu_container a span::before{
+margin-right: 5px;
+}
+
+.menu_container ul{
+  background: #0f3553;
+  height: 40vh;
+  width: 45vw;
+  padding: 0;
+  margin-top: 10px;
+  align-items: center;
+  transform: translateX(100%)
+}
+.fa-bars{
+  color: var(--color_text_menu);
+  position: absolute;
+  font-size: 25px;
+  right: 20px;
+  top: 20px;
+  border: 1px solid var(--color_text_menu);
+  border-radius: 3px;
+  padding: 5px;
+
 }
 /* --------------------main --------------------------------------------------*/
 
