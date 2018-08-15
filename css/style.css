@@ -61,7 +61,14 @@ form{
 }
 /* -------------------------------------header ----------------------------------------*/
 header{
-  
+  height: var(--header_h);
+  width: var(--body_w);
+  background-image: linear-gradient(var(--header-bg), var(--bar_color1)),
+    url(../img/menushape-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 40% 35%;
+  border-bottom-right-radius: 40% 35%;
 }
 /* --------------------main --------------------------------------------------*/
 
