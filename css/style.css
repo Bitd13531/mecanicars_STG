@@ -382,7 +382,7 @@ textarea {
   display: flex;
   padding: 0;
   width: 500%;
-  animation: cambio 9s infinite alternate linear;
+  animation: cambio 15s infinite alternate linear;
 }
 
 .slider li {
@@ -400,34 +400,36 @@ textarea {
 .img_container button {
   background: none;
   color: var(--color_text_yellow);
-  align-items: right;
+  left: 30%;
   border-radius: 18px;
   border: 2px solid var(--color_text_yellow);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   padding: 0.2rem 1.5rem;
-  width: 50%;
-  margin: 0 auto;
-  transform: translateY(-13vh);
+  width: 40%;
+  position: absolute;
+  bottom: 10px;
+  
+}
+.img_container {
+  position: relative;
 }
 .img_container button:hover {
   background: var(--bar_color2);
   color: var(--form_bg_color);
-  align-items: right;
-  border-radius: 18px;
   border: 2px solid var(--bar_color2);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  padding: 0.2rem 1.5rem;
-}
+  }
 
 .img_container .fa-angle-left {
-  color: var(--color_text_blue);
-  transform: translateY(-280%);
-  padding: 0 10px;
+  left: 10px;
 }
 .img_container .fa-angle-right {
-  transform: translate(62vw, -280%);
+  right: 10px;
+}
+.img_container i{
+  top: 45%;
+  position: absolute;
   color: var(--color_text_blue);
 }
 .img_container i:hover {
