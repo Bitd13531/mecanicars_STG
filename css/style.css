@@ -109,9 +109,9 @@ header {
 
 .menu_container ul {
   background: #0f3553;
-  height: 70vh;
+  height: 100vh;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 20px;
   margin-top: 10px;
   align-items: center;
 }
