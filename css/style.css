@@ -704,7 +704,7 @@ iframe {
     justify-self: flex-end;
     transform: translateY(-62px);
     padding-right: 3px;
-    z-index: 10;
+    z-index: 12;
   }
   /*----------------------------- formulario------------------------------- */
   form {
@@ -1032,6 +1032,9 @@ header{
  
   .main_title{
    width: 57%;
+  }
+  .phone{
+    z-index: 3;
   }
   
   /*----------------------------- formulario------------------------------- */
