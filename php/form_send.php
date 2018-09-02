@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
 $nombre = $_POST['name'];
 $apellido = $_POST['lastname']
-$mail = $_POST['email'];
+$mail1 = $_POST['email'];
 $telefono = $_POST['telefono'];
 $mensaje = $_POST['message'];
 
@@ -26,52 +26,37 @@ $email_message .= "Correo: " . $_POST['email'] . "\n";
 $email_message .= "Telefono: " . $_POST['telefono'] . "\n";
 $email_message .= "Mensaje: " . $_POST['message'] . "\n\n";
 $email_message .= "Enviado el " . date ('d/m/Y', time ());
+<console class="log"></console>
+// require 'PHPMailerAutoload.php';
+// include_once("class.phpmailer.php");
+// include_once("class.smtp.php");
 
-// $headers = 'From: '.$mail."\r\n".
-// 'Reply-To: '.$mail."\r\n" .
-// 'X-Mailer: PHP/' . phpversion();
-// if(@mail($email_to, $email_subject, $email_message, $headers));
-// echo "<script type='text/javascript'>alert('Tu mensaje ha sido enviado exitosamente');</script>";
-// echo "<script type='text/javascript'>window.location.href='index.html';</script>";
+// $mail = new PHPMailer;
+
+// $mail->SMTPDebug = 2;                               // Enable verbose debug output
+
+// $mensaje = $email_message;
+// $nombre = $_POST['name'];
+
+// $mail->isSMTP();                                      // Set mailer to use SMTP
+// $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+// $mail->SMTPAuth = true;                               // Enable SMTP authentication
+// $mail->Username = 'thecatangel@gmail.com';                 // SMTP username
+// $mail->Password = 'foxdie';                           // SMTP password
+// $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+// $mail->Port = 465;                                    // TCP port to connect to
+
+// $mail->setFrom($mail1, 'Correo recibido desde mecanicars.cl');
+// $mail->addAddress($email_to, $nombre);     
+
+// $mail->Subject = $email_subject;
+// $mail->Body    = $mensaje;
+
+// if(!$mail->send()) {
+//     echo 'Error, mensaje no enviado';
+//     echo 'Error del mensaje: ' . $mail->ErrorInfo;
+// } else {
+//     echo 'El mensaje se ha enviado correctamente';
+    
 // }
-// cierra php arriba e inicia el de abajo
-
-// <?php 
-require '../PHPMailerAutoload.php';
-// Crea una instancia de PHPMailer
-$mail1 = new PHPMailer;
-// //Usar SMTP
-$mail1->isSMTP();
-// //Habilitar el SMTP debugging
-// // 0 = off (para uso en produccion)
-// // 1 = mensajes del cliente
-// // 2 = mensajes del cliente y servidor
-$mail1->SMTPDebug = 2;
-
-// //Puerto SMTP puede ser 25, 465 or 587
-$mail1->Port = 25;
-// //Usar Autenticacion
-$mail1->SMTPAuth = true;
-// //Usuario para la autenticacion
-$mail1->Username = "formcontact@mecanicars.cl";
-// //Password para la autenticacion
-$mail1->Password = "M3c4n1c4rs";
-// //Quien Envia
-$mail1->setFrom(.$mail."\r\n" ., 'mecanicars.cl');
-
-$mail->addReplyTo(.$mail."\r\n" ., 'mecanicars.cl');
-// //A quien se va a enviar
-$mail1->addAddress($email_to, 'Atencion Mecanicars');
-// //Asunto
-$mail1->Subject = 'Tienes un mensaje desde el sitio Web www.mecanicars.cl - Datos de formulario de contacto';
-// //Cuerpo del mensaje
-$mail1->Body = $email_message;
-// //Agregar Adjunto
-$mail1->addAttachment('images/phpmailer_mini.png');
-// //Enviar el mensaje revisando errores
-if (!$mail1->send()) {
-    echo "Mailer Error: " . $mail->ErrorInfo;
-} else {
-    echo "Mensaje enviado";
-}
 ?>
