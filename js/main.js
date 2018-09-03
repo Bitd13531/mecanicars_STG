@@ -2,6 +2,7 @@ let menuVisible = false
 let qlick = document.getElementById('menu__bar')
 let mb = document.querySelector('nav')
 const rwd = matchMedia('(max-width: 770px)')
+form = document.getElementById('form');
 
 if (qlick && mb) {
   qlick.addEventListener('click', e => {
@@ -20,3 +21,12 @@ if (qlick && mb) {
     }
   })
 }
+
+  form.addEventListener('submit', e =>{
+    e.preventDefault;
+    console.log(e.target);
+    alert(e);
+  
+  })
+
+
