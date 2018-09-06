@@ -78,8 +78,7 @@ header {
   margin: 0px 0 0 15px;
   padding-top: 20px;
 }
-.main_menu_context {
-}
+
 
 /* --------------menu rwd------------------- */
 .menu_container {
@@ -161,8 +160,7 @@ header {
   grid-column: 2 / span 3;
   padding-right: 10px;
 }
-.main_menu_text span {
-}
+
 .main_menu_text span::after {
   content: '\A';
   white-space: pre;
@@ -314,7 +312,7 @@ form {
   grid-row-start: 1;
   grid-column: span 2;
 }
-input[type='submit'] {
+.form_button {
   background: var(--form_bg_color);
   color: var(--color_text_blue);
   margin-top: 0.5rem;
@@ -329,7 +327,7 @@ input[type='submit'] {
   width: 50%;
   justify-self: center;
 }
-input[type='submit']:hover {
+.form_button:hover {
   background: var(--bar_color1);
   color: var(--form_bg_color);
   margin-top: 0.5rem;

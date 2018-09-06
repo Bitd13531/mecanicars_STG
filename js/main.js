@@ -1,8 +1,15 @@
 let menuVisible = false
 let qlick = document.getElementById('menu__bar')
 let mb = document.querySelector('nav')
+let form = document.getElementById('form')
 const rwd = matchMedia('(max-width: 770px)')
-form = document.getElementById('form');
+      boton = document.getElementById('bto_send')
+      validarReCaptcha = document.getElementById('recaptcha');
+
+
+
+
+//menu responsive
 
 if (qlick && mb) {
   qlick.addEventListener('click', e => {
@@ -22,10 +29,16 @@ if (qlick && mb) {
   })
 }
 
-  form.addEventListener('submit', e =>{
-    e.preventDefault;
-    console.log(e.target);
-    alert(e);
+  boton.addEventListener('click', e =>{
+    let respuesta = grecaptcha.getResponse();
+    if(respuesta){
+
+    }else{
+      e.preventDefault
+      let mensaje = alert('Su mensaje no puede ser enviado hasta no validar el recaptcha');
+      document.getElementById('name').focus;
+      
+    }
   
   })
 
