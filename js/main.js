@@ -28,6 +28,7 @@ if (qlick && mb) {
     }
   })
 }
+if (boton) {
 
   boton.addEventListener('click', e =>{
     let respuesta = grecaptcha.getResponse();
@@ -41,5 +42,6 @@ if (qlick && mb) {
     }
   
   })
+}
 
 
