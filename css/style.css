@@ -56,7 +56,9 @@ p {
 img {
   max-width: 100%;
 }
-
+.fb-comments{
+  margin: 0 auto;
+}
 /* -------------------------------------header ----------------------------------------*/
 header {
   height: var(--header_h);
@@ -243,6 +245,9 @@ header {
   grid-row-start: 3;
   grid-column: span 3;
 }
+.padd{
+  padding: 10px 0 5px 20px;
+}
 .main_title1, .main_title{
   color: var(--color_text_yellow);
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.75);
@@ -401,12 +406,23 @@ textarea {
   border-radius: 3px;
   
 }
+.error_page{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font_size_bigger);
+  height: 20vw;
+  width: 100%;
+  color: var(--color_text_yellow);
+  text-shadow: var(--shadow);
+  font-family: var(--font_main), sans serif;
+}
 .card p,.card1 p, .card1 li{
   font-family: var(--font_second), sans serif;
   padding: 0 10px 20px 10px;
   text-align: justify;
 }
-.card h3, .card1 h2{
+.card h3, .card1 h2, .card1 h3{
   font-family: var(--font_main), sans serif;
   padding: 0 10px;
   text-align: left;
