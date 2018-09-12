@@ -1104,6 +1104,7 @@ header{
     z-index: 3;
     right: 1%;
     top: 5%;
+    -moz-transform: translateY(-40px);
   }
 
   .contactus h3 {
